@@ -1,0 +1,4 @@
+C:\Users\Tianlai Dong\Documents\GitHub\socket\syn_socket\server\bin\Debug\server.exe
+C:\Users\Tianlai Dong\Documents\GitHub\socket\syn_socket\server\bin\Debug\server.pdb
+C:\Users\Tianlai Dong\Documents\GitHub\socket\syn_socket\server\obj\x86\Debug\server.exe
+C:\Users\Tianlai Dong\Documents\GitHub\socket\syn_socket\server\obj\x86\Debug\server.pdb
