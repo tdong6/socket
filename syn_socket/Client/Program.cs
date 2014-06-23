@@ -7,10 +7,9 @@ using System.Net.Sockets;
 
 namespace Client
 {
-    public class SynchronousSocketClient
-    {
+   public class SynchronousSocketClient {
 
-        public static void StartClient() {
+    public static void StartClient() {
         // Data buffer for incoming data.
         byte[] bytes = new byte[1024];
 
@@ -18,7 +17,7 @@ namespace Client
         try {
             // Establish the remote endpoint for the socket.
             // This example uses port 11000 on the local computer.
-            IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+            IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
             IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);
 
@@ -60,11 +59,10 @@ namespace Client
             Console.WriteLine( e.ToString());
         }
     }
-
-        public static int Main(String[] args)
-        {
-            StartClient();
-            return 0;
-        }
+    
+    public static int Main(String[] args) {
+        StartClient();
+        return 0;
     }
+}
 }
